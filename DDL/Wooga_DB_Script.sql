@@ -25,7 +25,7 @@ CREATE TABLE if NOT EXISTS User (
     pwd	INTEGER	NOT NULL,
     address	VARCHAR(255)	NOT NULL,
     phone_number	VARCHAR(255)	NOT NULL,
-    email	VARCHAR(255)	NULL,
+    email	VARCHAR(255)	NOT NULL,
     signup_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_login_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_pwd_change_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -40,7 +40,7 @@ CREATE TABLE if NOT EXISTS User (
 CREATE TABLE if NOT EXISTS Manager (
     admin_id	VARCHAR(255)	NOT NULL,
     admin_pwd	VARCHAR(255)	NOT NULL,
-    admin_PhoneNumber	VARCHAR(255)	NOT NULL,
+    admin_phone_number	VARCHAR(255)	NOT NULL,
     admin_email	VARCHAR(255)	NOT NULL,
     PRIMARY KEY(admin_id)
 )ENGINE=INNODB;
