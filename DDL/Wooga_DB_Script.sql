@@ -209,6 +209,7 @@ CREATE TABLE if NOT EXISTS LikePostList (
     user_id	VARCHAR(255)	NOT NULL,
     like_post_create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(like_post_id),
+    UNIQUE KEY unique_post_user (post_id, user_id),
     FOREIGN KEY(post_id) REFERENCES Post(post_id),
     FOREIGN KEY(user_id) REFERENCES user(user_id)
 )ENGINE=INNODB;
