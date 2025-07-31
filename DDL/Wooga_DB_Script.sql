@@ -25,7 +25,7 @@ CREATE TABLE if NOT EXISTS User (
     pwd	INTEGER	NOT NULL,
     address	VARCHAR(255)	NOT NULL,
     phone_number	VARCHAR(255)	NOT NULL,
-    email	VARCHAR(255)	NULL,
+    email	VARCHAR(255)	NOT NULL,
     signup_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_login_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_pwd_change_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -40,7 +40,7 @@ CREATE TABLE if NOT EXISTS User (
 CREATE TABLE if NOT EXISTS Manager (
     admin_id	VARCHAR(255)	NOT NULL,
     admin_pwd	VARCHAR(255)	NOT NULL,
-    admin_PhoneNumber	VARCHAR(255)	NOT NULL,
+    admin_phone_number	VARCHAR(255)	NOT NULL,
     admin_email	VARCHAR(255)	NOT NULL,
     PRIMARY KEY(admin_id)
 )ENGINE=INNODB;
@@ -48,9 +48,9 @@ CREATE TABLE if NOT EXISTS Manager (
 CREATE TABLE if NOT EXISTS Category (
     category_id	INTEGER	NOT NULL	auto_increment,
     category_name	VARCHAR(255) NOT NULL,
-    category_id2 INTEGER NULL,
+    parent_category_id INTEGER NULL,
     PRIMARY KEY(category_id),
-    FOREIGN KEY(category_id2) REFERENCES category(category_id)
+    FOREIGN KEY(parent_category_id) REFERENCES category(category_id)
 )ENGINE=INNODB;
 
 CREATE TABLE if NOT EXISTS Inquiry (
@@ -72,7 +72,7 @@ CREATE TABLE if NOT EXISTS Post (
     product_name	VARCHAR(255)	NOT NULL,
     rental_start_date	DATETIME	NOT NULL,
     rental_end_date	DATETIME	NOT NULL,
-    rental_price	INTEGER	NOT NULL DEFAULT 0,
+    rental_daily_price	INTEGER	NOT NULL DEFAULT 0,
     deposit	INTEGER	NOT NULL DEFAULT 0,
     created_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at	DATETIME	NULL,
@@ -113,16 +113,16 @@ CREATE TABLE if NOT EXISTS Report (
     reporter_id	VARCHAR(255)	NOT NULL,
     report_sort	VARCHAR(255)	NOT NULL,
     reported_user_id	VARCHAR(255)	NULL,
-    post_id	INTEGER	NULL,
+    reported_post_id	INTEGER	NULL,
     PRIMARY KEY(report_id),
     FOREIGN KEY(report_manager) REFERENCES Manager(admin_id),
     FOREIGN KEY(reporter_id) REFERENCES User(user_id),
     FOREIGN KEY(reported_user_id) REFERENCES User(user_id),
-    FOREIGN KEY(post_id) REFERENCES Post(post_id),
+    FOREIGN KEY(reported_post_id) REFERENCES Post(post_id),
     CHECK(report_sort IN ('USER','POST')),
     CHECK(
-        (report_sort = 'USER' AND reported_user_id IS NOT NULL AND post_id IS NULL) OR
-        (report_sort = 'POST' AND post_id IS NOT NULL AND reported_user_id IS NULL)
+        (report_sort = 'USER' AND reported_user_id IS NOT NULL AND reported_post_id IS NULL) OR
+        (report_sort = 'POST' AND reported_post_id IS NOT NULL AND reported_user_id IS NULL)
     )
 )ENGINE=INNODB;
 
@@ -130,6 +130,7 @@ CREATE TABLE if NOT EXISTS Message (
     message_id	INTEGER	NOT NULL	auto_increment,
     sender_id	VARCHAR(255)	NOT NULL,
     receiver_id	VARCHAR(255)	NOT NULL,
+    title VARCHAR(255)     NOT NULL,
     content	VARCHAR(255)	NOT NULL,
     sent_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     message_expiry_date DATETIME NOT NULL,
@@ -155,7 +156,7 @@ CREATE TABLE if NOT EXISTS ReportPhoto (
     report_id	INTEGER	NOT NULL,
     PRIMARY KEY(report_image_id),
     FOREIGN KEY(report_id) REFERENCES Report(report_id)
-);
+)ENGINE=INNODB;
 
 CREATE TABLE if NOT EXISTS BlackList (
     blacklist_id	INTEGER	NOT NULL	auto_increment,
@@ -182,7 +183,7 @@ CREATE TABLE if NOT EXISTS LoginSuccess (
     user_id	VARCHAR(255) NOT NULL,
     PRIMARY KEY(login_success_id),
     FOREIGN KEY(user_id) REFERENCES User(user_id)
-    )ENGINE=INNODB;
+)ENGINE=INNODB;
 
 CREATE TABLE if NOT EXISTS RentalRequest (
     rental_request_id	INTEGER	NOT NULL	auto_increment,
