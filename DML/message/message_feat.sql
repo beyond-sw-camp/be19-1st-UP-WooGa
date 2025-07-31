@@ -21,7 +21,7 @@ SELECT message_id
 UPDATE message 
    SET check_time = CURRENT_TIMESTAMP 
      , message_expiry_date = DATE_ADD(NOW(), INTERVAL 1 MONTH)
- WHERE message_id = '' AND check_time IS NULL;
+ WHERE message_id = 3 AND check_time IS NULL;
 
 -- 메세지 목록 확인
 SELECT message_id
