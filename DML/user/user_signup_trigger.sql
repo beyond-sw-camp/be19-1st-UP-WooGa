@@ -14,5 +14,5 @@ END;
 
 DELIMITER ;
 
--- ghkr
+-- 트리거 생성 확인
 show triggers ;
