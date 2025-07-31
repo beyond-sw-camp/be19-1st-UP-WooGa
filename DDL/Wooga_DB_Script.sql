@@ -22,7 +22,7 @@ DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE if NOT EXISTS User (
     user_id	VARCHAR(255)	NOT NULL,
-    pwd	INTEGER	NOT NULL,
+    pwd	VARCHAR(255)	NOT NULL,
     address	VARCHAR(255)	NOT NULL,
     phone_number	VARCHAR(255)	NOT NULL,
     email	VARCHAR(255)	NOT NULL,
