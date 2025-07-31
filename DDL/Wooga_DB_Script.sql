@@ -119,6 +119,7 @@ CREATE TABLE if NOT EXISTS Report (
     FOREIGN KEY(reporter_id) REFERENCES User(user_id),
     FOREIGN KEY(reported_user_id) REFERENCES User(user_id),
     FOREIGN KEY(reported_post_id) REFERENCES Post(post_id),
+    CHECK(report_state IN ('REPORTED','PROGESSING,RESOLVE,REJECT')),
     CHECK(report_sort IN ('USER','POST')),
     CHECK(
         (report_sort = 'USER' AND reported_user_id IS NOT NULL AND reported_post_id IS NULL) OR
