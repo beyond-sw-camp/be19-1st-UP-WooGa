@@ -133,7 +133,7 @@ CREATE TABLE if NOT EXISTS Message (
     title VARCHAR(255)     NOT NULL,
     content	VARCHAR(255)	NOT NULL,
     sent_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    message_expiry_date DATETIME NULL DEFAULT NULL,
+    message_expiry_date DATETIME NULL,
     check_time DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(message_id),
     FOREIGN KEY(sender_id) REFERENCES User(user_id),
