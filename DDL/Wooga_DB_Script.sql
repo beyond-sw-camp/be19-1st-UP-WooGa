@@ -130,6 +130,7 @@ CREATE TABLE if NOT EXISTS Message (
     message_id	INTEGER	NOT NULL	auto_increment,
     sender_id	VARCHAR(255)	NOT NULL,
     receiver_id	VARCHAR(255)	NOT NULL,
+    title VARCHAR(255)     NOT NULL,
     content	VARCHAR(255)	NOT NULL,
     sent_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     message_expiry_date DATETIME NOT NULL,
