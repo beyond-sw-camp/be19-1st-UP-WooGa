@@ -133,7 +133,7 @@ CREATE TABLE if NOT EXISTS Message (
     title VARCHAR(255)     NOT NULL,
     content	VARCHAR(255)	NOT NULL,
     sent_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    message_expiry_date DATETIME NOT NULL,
+    message_expiry_date DATETIME NULL,
     check_time DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(message_id),
     FOREIGN KEY(sender_id) REFERENCES User(user_id),
@@ -209,6 +209,7 @@ CREATE TABLE if NOT EXISTS LikePostList (
     user_id	VARCHAR(255)	NOT NULL,
     like_post_create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(like_post_id),
+    UNIQUE KEY unique_post_user (post_id, user_id),
     FOREIGN KEY(post_id) REFERENCES Post(post_id),
     FOREIGN KEY(user_id) REFERENCES user(user_id)
 )ENGINE=INNODB;
