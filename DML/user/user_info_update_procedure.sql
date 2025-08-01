@@ -1,8 +1,7 @@
---
-
 DELIMITER //
 
-CREATE PROCEDURE UpdateUserInfo (
+DROP PROCEDURE IF EXISTS UpdateUserInfo;
+CREATE PROCEDURE IF NOT EXISTS UpdateUserInfo (
     IN p_user_id VARCHAR(255),
     IN p_pwd VARCHAR(255),
     IN p_email VARCHAR(255),
