@@ -119,7 +119,7 @@ CREATE TABLE if NOT EXISTS Report (
     FOREIGN KEY(reporter_id) REFERENCES User(user_id),
     FOREIGN KEY(reported_user_id) REFERENCES User(user_id),
     FOREIGN KEY(reported_post_id) REFERENCES Post(post_id),
-    CHECK(report_state IN ('REPORTED','PROGESSING,RESOLVE,REJECT')),
+    CHECK(report_state IN ('REPORTED','PROGESSING','RESOLVE','REJECT')),
     CHECK(report_sort IN ('USER','POST')),
     CHECK(
         (report_sort = 'USER' AND reported_user_id IS NOT NULL AND reported_post_id IS NULL) OR
@@ -165,6 +165,7 @@ CREATE TABLE if NOT EXISTS BlackList (
     blacklist_reason	VARCHAR(255) NOT NULL,
     blacklist_start_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     blacklist_period	INTEGER NOT NULL DEFAULT 3,
+    blacklist_end_at DATETIME NOT NULL,
     PRIMARY KEY(blacklist_id),
     FOREIGN KEY(user_id) REFERENCES User(user_id)
 )ENGINE=INNODB;
