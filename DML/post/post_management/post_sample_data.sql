@@ -85,3 +85,4 @@ VALUES('https://www.naver.com/', 1),
 select
     *
 from PostPhoto;
+
