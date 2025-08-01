@@ -9,13 +9,6 @@
      - LoginFailure 테이블에 INSERT
  */
 
-SHOW PROCEDURE STATUS
-WHERE Db = DATABASE();
-
-select * from User;
-select * from LoginSuccess;
-select * from LoginFailure;
-
 DELIMITER //
 
 DROP PROCEDURE IF EXISTS LoginAttempt;
@@ -71,3 +64,6 @@ END;
 //
 
 DELIMITER ;
+
+SHOW PROCEDURE STATUS
+    WHERE Db = DATABASE();
