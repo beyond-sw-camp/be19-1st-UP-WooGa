@@ -47,7 +47,7 @@ CREATE TABLE if NOT EXISTS Manager (
 
 CREATE TABLE if NOT EXISTS Category (
     category_id	INTEGER	NOT NULL	auto_increment,
-    category_name	VARCHAR(255) NOT NULL,
+    category_name	VARCHAR(255) NOT NULL UNIQUE,
     parent_category_id INTEGER NULL,
     PRIMARY KEY(category_id),
     FOREIGN KEY(parent_category_id) REFERENCES category(category_id)
