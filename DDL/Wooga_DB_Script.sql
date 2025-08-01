@@ -47,7 +47,7 @@ CREATE TABLE if NOT EXISTS Manager (
 
 CREATE TABLE if NOT EXISTS Category (
     category_id	INTEGER	NOT NULL	auto_increment,
-    category_name	VARCHAR(255) NOT NULL,
+    category_name	VARCHAR(255) NOT NULL UNIQUE,
     parent_category_id INTEGER NULL,
     PRIMARY KEY(category_id),
     FOREIGN KEY(parent_category_id) REFERENCES category(category_id)
@@ -165,7 +165,7 @@ CREATE TABLE if NOT EXISTS BlackList (
     blacklist_reason	VARCHAR(255) NOT NULL,
     blacklist_start_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     blacklist_period	INTEGER NOT NULL DEFAULT 3,
-    blacklist_end_at DATETIME NOT NULL,
+    blacklist_end_at    DATETIME NOT NULL,
     PRIMARY KEY(blacklist_id),
     FOREIGN KEY(user_id) REFERENCES User(user_id)
 )ENGINE=INNODB;
