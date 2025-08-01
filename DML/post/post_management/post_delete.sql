@@ -7,9 +7,6 @@ SET autocommit = 0;
 START TRANSACTION;
 
 
-DELETE
-FROM post
-WHERE post_id = 9;
 
 
 DELETE
@@ -27,6 +24,12 @@ WHERE post_id = 9;
 DELETE
 FROM report
 WHERE reported_post_id = 9;
+
+
+DELETE
+FROM post
+WHERE post_id = 9;
+
 
 
 select
