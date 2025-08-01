@@ -1,16 +1,21 @@
 -- user테이블 샘플 데이터
 INSERT INTO User (user_id, pwd, address, phone_number, email)
 VALUES
-    ('user01', 1234, '서울시 강남구', '010-1234-5678', 'user01@example.com'),
-    ('user02', 1234, '서울시 강북구', '010-2234-5678', 'user02@example.com'),
-    ('user03', 1234, '서울시 강서구', '010-3234-5678', 'user03@example.com'),
-    ('user04', 1234, '서울시 강동구', '010-4234-5678', 'user04@example.com'),
-    ('user05', 1234, '서울시 중구', '010-5234-5678', 'user05@example.com'),
-    ('user06', 1234, '부산시 해운대구', '010-6234-5678', 'user06@example.com'),
-    ('user07', 1234, '대구시 수성구', '010-7234-5678', 'user07@example.com'),
-    ('user08', 1234, '인천시 연수구', '010-8234-5678', 'user08@example.com'),
-    ('user09', 1234, '광주시 북구', '010-9234-5678', 'user09@example.com'),
-    ('user10', 1234, '울산시 남구', '010-0334-5678', 'user10@example.com');
+    ('user01', '1234', '서울시 강남구', '010-1234-5678', 'user01@example.com'),
+    ('user02', '1234', '서울시 강북구', '010-2234-5678', 'user02@example.com'),
+    ('user03', '1234', '서울시 강서구', '010-3234-5678', 'user03@example.com'),
+    ('user04', '1234', '서울시 강동구', '010-4234-5678', 'user04@example.com'),
+    ('user05', '1234', '서울시 중구', '010-5234-5678', 'user05@example.com'),
+    ('user06', '1234', '부산시 해운대구', '010-6234-5678', 'user06@example.com'),
+    ('user07', '1234', '대구시 수성구', '010-7234-5678', 'user07@example.com'),
+    ('user08', '1234', '인천시 연수구', '010-8234-5678', 'user08@example.com'),
+    ('user09', '1234', '광주시 북구', '010-9234-5678', 'user09@example.com'),
+    ('user10', '1234', '울산시 남구', '010-0334-5678', 'user10@example.com');
+
+INSERT INTO User (user_id, pwd, address, phone_number, email, user_state)
+VALUES
+    ('user11', '1234', '서울시 강남구', '010-0000-0000', 'user11@example.com', 'SLEEP'),
+    ('user12', '1234', '서울시 강남구', '010-1111-1111', 'user12@example.com', 'RESIGN');
 
 -- manager테이블 샘플 데이터
 INSERT INTO Manager (admin_id, admin_pwd, admin_phone_number, admin_email)
@@ -24,13 +29,13 @@ VALUES
 -- category테이블 샘플 데이터
 INSERT INTO Category (category_name, parent_category_id)
 VALUES
-    ('가전제품', NULL),
-    ('생활용품', NULL),
+    ('주방가전', NULL),
+    ('수납용품', NULL),
     ('전자기기', NULL),
-    ('주방가전', 1),
-    ('청소가전', 1),
-    ('침구/가구', 2),
-    ('태블릿/노트북', 3),
+    ('에어프라이기', 1),
+    ('전자레인지', 1),
+    ('서랍장', 2),
+    ('행거', 2),
     ('카메라', 3),
     ('게임기기', 3),
     ('기타', NULL);
