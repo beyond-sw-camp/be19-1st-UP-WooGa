@@ -3,7 +3,7 @@ delimiter //
 
 CREATE EVENT del_expired_blacklist
 ON SCHEDULE EVERY 1 DAY
-STARTS '2025-08-02 00:00:00'
+STARTS '2025-08-02 00:00:01'
 DO
   DELETE 
     FROM blacklist
