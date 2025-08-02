@@ -1,4 +1,4 @@
--- user테이블 샘플 데이터
+-- User 테이블 샘플 데이터
 INSERT INTO User (user_id, pwd, address, phone_number, email)
 VALUES
     ('user01', '1234', '서울시 강남구', '010-1234-5678', 'user01@example.com'),
@@ -12,12 +12,13 @@ VALUES
     ('user09', '1234', '광주시 북구', '010-9234-5678', 'user09@example.com'),
     ('user10', '1234', '울산시 남구', '010-0334-5678', 'user10@example.com');
 
+-- User 테이블 샘플 데이터 (휴면, 탈퇴 계정)
 INSERT INTO User (user_id, pwd, address, phone_number, email, user_state)
 VALUES
     ('user11', '1234', '서울시 강남구', '010-0000-0000', 'user11@example.com', 'SLEEP'),
     ('user12', '1234', '서울시 강남구', '010-1111-1111', 'user12@example.com', 'RESIGN');
 
--- manager테이블 샘플 데이터
+-- Manager 테이블 샘플 데이터
 INSERT INTO Manager (admin_id, admin_pwd, admin_phone_number, admin_email)
 VALUES
     ('admin01', 'adminpass1', '010-1999-9999', 'admin01@example.com'),
@@ -26,7 +27,7 @@ VALUES
     ('admin04', 'adminpass4', '010-4999-9999', 'admin04@example.com'),
     ('admin05', 'adminpass5', '010-5999-9999', 'admin05@example.com');
 
--- category테이블 샘플 데이터
+-- Category 테이블 샘플 데이터
 INSERT INTO Category (category_name, parent_category_id)
 VALUES
     ('주방가전', NULL),
@@ -76,3 +77,32 @@ VALUES
 
     ('user10', 10, '전동 드릴 세트 대여', 'DIY나 조립에 유용한 공구입니다.', '보쉬 드릴 세트',
      '2025-08-08', '2025-08-15', 3500, 20000, NOW(), NOW(), '2025-08-08', 0, 2);
+
+-- PostPhoto 테이블 샘플 데이터
+INSERT INTO PostPhoto(photo_post_url, post_id)
+VALUES
+    ('https://cdn.cuckoo.co.kr/upload_cuckoo/_bo_mall/product/770dc7d2-107c-4e50-a419-fcecd7cc517f.jpg', 1),
+    ('https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/268804-01.png', 2),
+    ('https://sitem.ssgcdn.com/53/07/27/item/1000483270753_i1_1200.jpg', 3),
+    ('https://img.danawa.com/prod_img/500000/577/246/img/16246577_1.jpg', 4),
+    ('https://image.zdnet.co.kr/2020/05/19/jungvinh_Pn6ii2tGd8y.jpg', 5),
+    ('https://www.costco.co.kr/medias/sys_master/images/hb5/h4f/70125134741534.webp', 6),
+    ('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-macbook-air-m2-spacegray-202208', 7),
+    ('https://de89qjx90gu7m.cloudfront.net/familymall_prod/product/a979e6ff-3c6d-4250-bafb-833fdedea4f6.png', 8),
+    ('https://imgs.kshop.co.kr/goods/557//353557_g_20170831114047.jpg', 9),
+    ('https://m.woodworker.co.kr/web/product/big/202412/2739eed9aa6c4969898338315bf66018.jpg', 10);
+
+-- RentalRequest 테이블 데이터
+INSERT INTO RentalRequest
+    (post_id, renter, request_start_date, request_end_date, created_at, state, final_price)
+VALUES
+    (1, 'user01', '2025/10/01', '2025/11/01', '2025/09/21', 'ACCEPT', 100000),
+    (2, 'user02', '2025/10/02', '2025/11/01', '2025/09/22', 'WAITING', 100000),
+    (3, 'user03', '2025/10/03', '2025/11/01', '2025/09/23', 'DECLINE', 100000),
+    (4, 'user04', '2025/10/04', '2025/11/01', '2025/09/24', 'ACCEPT', 100000),
+    (5, 'user05', '2025/10/05', '2025/11/01', '2025/09/25', 'ACCEPT', 100000),
+    (6, 'user06', '2025/10/06', '2025/11/01', '2025/09/26', 'DECLINE', 100000),
+    (7, 'user07', '2025/10/07', '2025/11/01', '2025/09/27', 'ACCEPT', 100000),
+    (8, 'user08', '2025/10/08', '2025/11/01', '2025/09/28', 'WAITING', 100000),
+    (9, 'user09', '2025/10/09', '2025/11/01', '2025/09/29', 'ACCEPT', 100000),
+    (10, 'user10', '2025/10/10', '2025/11/01', '2025/09/30', 'DECLINE', 100000);
