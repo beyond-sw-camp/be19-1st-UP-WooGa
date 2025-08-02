@@ -26,18 +26,68 @@ VALUES
     ('admin05', 'adminpass5', '010-5999-9999', 'admin05@example.com');
 
 -- Category 테이블 샘플 데이터
-INSERT INTO Category (category_name, parent_category_id)
-VALUES
-    ('주방가전', NULL),
-    ('수납용품', NULL),
-    ('전자기기', NULL),
-    ('에어프라이기', 1),
-    ('전자레인지', 1),
-    ('서랍장', 2),
-    ('행거', 2),
-    ('카메라', 3),
-    ('게임기기', 3),
-    ('기타', NULL);
+-- 1. 대분류 (parent_category_id = NULL)
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('주방가전', NULL),        -- id = 1
+                                                             ('생활가전', NULL),        -- id = 2
+                                                             ('계절가전', NULL),        -- id = 3
+                                                             ('미용/헬스가전', NULL),    -- id = 4
+                                                             ('전기기기', NULL),        -- id = 5
+                                                             ('기타', NULL);           -- id = 6
+
+-- 2. 소분류 (parent_category_id = 대분류 ID)
+-- 주방가전
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('에어프라이어', 1),
+                                                             ('전자레인지', 1),
+                                                             ('커피머신', 1),
+                                                             ('토스터기', 1),
+                                                             ('블렌더/믹서기', 1),
+                                                             ('전기포트', 1),
+                                                             ('전기밥솥', 1),
+                                                             ('인덕션/전기레인지', 1),
+                                                             ('식기건조기', 1);
+
+-- 생활가전
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('무선청소기', 2),
+                                                             ('로봇청소기', 2),
+                                                             ('다리미/스팀다리미', 2),
+                                                             ('의류관리기', 2),
+                                                             ('살균기/건조기', 2),
+                                                             ('전동공구/DIY도구', 2),
+                                                             ('세탁기(소형)', 2);
+
+-- 계절가전
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('선풍기', 3),
+                                                             ('서큘레이터', 3),
+                                                             ('에어컨(이동식)', 3),
+                                                             ('히터/온풍기', 3),
+                                                             ('전기매트', 3),
+                                                             ('가습기', 3),
+                                                             ('제습기', 3),
+                                                             ('에어서큘레이터', 3);
+
+-- 미용/헬스가전
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('헤어드라이기', 4),
+                                                             ('고데기/매직기', 4),
+                                                             ('피부관리기', 4),
+                                                             ('안마기/마사지건', 4),
+                                                             ('체중계/체성분계', 4),
+                                                             ('헬스케어 기기', 4);
+
+-- 전자기기
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('촬영 장비(조명/마이크)', 5),
+                                                             ('소형 프로젝터', 5),
+                                                             ('게임기기', 5);
+
+-- 기타
+INSERT INTO Category (category_name, parent_category_id) VALUES
+                                                             ('캠핑용 가전', 6),
+                                                             ('기타 소형가전', 6);
 
 -- Post 테이블 샘플 데이터
 INSERT INTO Post (
@@ -46,34 +96,31 @@ INSERT INTO Post (
     created_at, updated_at, next_available_date, report_count, min_rental_period
 )
 VALUES
-    ('user01', 4, '쿠쿠 밥솥 대여합니다', '6인용 전기밥솥. 상태 양호.', '쿠쿠 밥솥',
+    ('user01', 13, '쿠쿠 밥솥 대여합니다', '6인용 전기밥솥. 상태 양호.', '쿠쿠 밥솥',
      '2025-08-01', '2025-08-15', 2000, 20000, NOW(), NOW(), '2025-08-01', 0, 3),
 
-    ('user02', 5, '다이슨 청소기 렌탈', '흡입력 좋고 가벼운 무선청소기.', '다이슨 V11',
+    ('user02', 16, '다이슨 청소기 렌탈', '흡입력 좋고 가벼운 무선청소기.', '다이슨 V11',
      '2025-08-03', '2025-08-30', 6000, 50000, NOW(), NOW(), '2025-08-03', 0, 5),
 
-    ('user03', 6, '라텍스 침대 매트리스', '1개월 사용 가능, 습기 제거됨.', '라텍스 매트리스',
+    ('user03', 41, '라텍스 침대 매트리스', '1개월 사용 가능, 습기 제거됨.', '라텍스 매트리스',
      '2025-08-05', '2025-09-05', 4000, 30000, NOW(), NOW(), '2025-08-05', 0, 7),
 
-    ('user04', 7, '갤럭시 탭 S8+', '필기용으로 적합한 태블릿입니다.', 'Galaxy Tab S8+',
+    ('user04', 5, '갤럭시 탭 S8+', '필기용으로 적합한 태블릿입니다.', 'Galaxy Tab S8+',
      '2025-08-07', '2025-08-14', 7000, 40000, NOW(), NOW(), '2025-08-07', 0, 2),
 
-    ('user05', 8, '캐논 DSLR 카메라 대여', '여행용으로 잠깐 빌려드려요.', 'Canon 800D',
+    ('user05', 37, '캐논 DSLR 카메라 대여', '여행용으로 잠깐 빌려드려요.', 'Canon 800D',
      '2025-08-02', '2025-08-10', 5000, 50000, NOW(), NOW(), '2025-08-02', 0, 3),
 
-    ('user06', 9, '닌텐도 스위치 대여해요', '모든 기능 정상 작동.', 'Nintendo Switch',
+    ('user06', 39, '닌텐도 스위치 대여해요', '모든 기능 정상 작동.', 'Nintendo Switch',
      '2025-08-10', '2025-08-20', 6000, 30000, NOW(), NOW(), '2025-08-10', 0, 2),
 
-    ('user07', 3, '맥북 에어 M2 대여', '개발용으로 잠시 필요하신 분께.', 'MacBook Air M2',
+    ('user07', 5, '맥북 에어 M2 대여', '개발용으로 잠시 필요하신 분께.', 'MacBook Air M2',
      '2025-08-01', '2025-08-31', 10000, 100000, NOW(), NOW(), '2025-08-01', 0, 5),
 
-    ('user08', 2, '의류 스팀다리미 렌탈', '작지만 성능 좋은 다리미.', 'LG 스팀다리미',
+    ('user08', 18, '의류 스팀다리미 렌탈', '작지만 성능 좋은 다리미.', 'LG 스팀다리미',
      '2025-08-04', '2025-08-18', 2500, 15000, NOW(), NOW(), '2025-08-04', 0, 3),
 
-    ('user09', 1, '삼성 대형 냉장고', '양문형 600L 대용량 냉장고.', '삼성 냉장고',
-     '2025-08-06', '2025-08-26', 8000, 80000, NOW(), NOW(), '2025-08-06', 0, 5),
-
-    ('user10', 10, '전동 드릴 세트 대여', 'DIY나 조립에 유용한 공구입니다.', '보쉬 드릴 세트',
+    ('user09', 21, '전동 드릴 세트 대여', 'DIY나 조립에 유용한 공구입니다.', '보쉬 드릴 세트',
      '2025-08-08', '2025-08-15', 3500, 20000, NOW(), NOW(), '2025-08-08', 0, 2);
 
 -- PostPhoto 테이블 샘플 데이터
@@ -87,8 +134,7 @@ VALUES
     ('https://www.costco.co.kr/medias/sys_master/images/hb5/h4f/70125134741534.webp', 6),
     ('https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-macbook-air-m2-spacegray-202208', 7),
     ('https://de89qjx90gu7m.cloudfront.net/familymall_prod/product/a979e6ff-3c6d-4250-bafb-833fdedea4f6.png', 8),
-    ('https://imgs.kshop.co.kr/goods/557//353557_g_20170831114047.jpg', 9),
-    ('https://m.woodworker.co.kr/web/product/big/202412/2739eed9aa6c4969898338315bf66018.jpg', 10);
+    ('https://m.woodworker.co.kr/web/product/big/202412/2739eed9aa6c4969898338315bf66018.jpg', 9);
 
 -- RentalRequest 테이블 데이터
 INSERT INTO RentalRequest
@@ -102,5 +148,4 @@ VALUES
     (6, 'user06', '2025/10/06', '2025/11/01', '2025/09/26', 'DECLINE', 100000),
     (7, 'user07', '2025/10/07', '2025/11/01', '2025/09/27', 'ACCEPT', 100000),
     (8, 'user08', '2025/10/08', '2025/11/01', '2025/09/28', 'WAITING', 100000),
-    (9, 'user09', '2025/10/09', '2025/11/01', '2025/09/29', 'ACCEPT', 100000),
-    (10, 'user10', '2025/10/10', '2025/11/01', '2025/09/30', 'DECLINE', 100000);
+    (9, 'user09', '2025/10/10', '2025/11/01', '2025/09/30', 'DECLINE', 100000);
