@@ -3,7 +3,8 @@
 -- 가입일자, 마지막로그인일자, 마지막비밀번호변경날짜, 사용자 상태, 신고누적횟수는 default 값으로 자동 설정됨
 
 -- 기존 회원 목록
-select * from user;
+select * from User order by signup_date desc;
+select * from UserInfoUpdate order by user_update_at desc;
 
 INSERT INTO User (
                   user_id
@@ -21,5 +22,5 @@ VALUES (
        );
 
 -- 데이터 확인
-select * from user;
-select * from UserInfoUpdate;
+select * from User order by signup_date desc;
+select * from UserInfoUpdate order by user_update_at desc;
