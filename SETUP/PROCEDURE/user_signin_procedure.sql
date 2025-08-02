@@ -40,9 +40,9 @@ BEGIN
         VALUES (p_ip, failure_reason, p_user_id);
         SELECT failure_reason AS result;
 
-    -- 4. 상태가 ACTIVE가 아닌 경우 (휴면 또는 탈퇴)
-    ELSEIF v_state != 'ACTIVE' THEN
-        SET failure_reason = CONCAT('로그인할 수 없는 상태입니다. 현재 상태: ', v_state);
+    -- 4. 상태가 ACTIVE가 아닌 경우 (탈퇴)
+    ELSEIF v_state = 'RESIGN' THEN
+        SET failure_reason = '탈퇴한 사용자입니다.';
         INSERT INTO LoginFailure (login_failure_ip, login_failure_reason, user_id)
         VALUES (p_ip, failure_reason, p_user_id);
         SELECT failure_reason AS result;
@@ -56,6 +56,12 @@ BEGIN
         UPDATE User
         SET last_login_date = CURRENT_TIMESTAMP
         WHERE user_id = p_user_id;
+        
+        -- 만약 휴면상태일때 사용자 상태 업데이트
+        UPDATE User
+           SET sleep_date = NULL
+             , user_state = 'ACTIVE'
+         WHERE user_id = p_user_id AND sleep_date IS NOT NULL;
 
         SELECT '로그인 성공' AS result;
 

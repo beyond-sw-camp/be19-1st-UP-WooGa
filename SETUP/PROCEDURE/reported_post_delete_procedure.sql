@@ -19,5 +19,3 @@ END;
 //
 
 DELIMITER ;
-
-CALL delete_reported_posts();
