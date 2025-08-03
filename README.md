@@ -1,14 +1,14 @@
 <img width="1338" height="868" alt="image" src="https://github.com/user-attachments/assets/21121f48-cef5-461f-a9cf-56305f1379cd" />
 
 
-┣ [**1. 프로젝트 개요**](#1--------)  
-┣ [**2. 주요 기능**](#2------)  
+┣ [**1. 프로젝트 개요**](#1-프로젝트-개요)  
+┣ [**2. 주요 기능**](#2-주요-기능)  
 ┣ [**3. WBS**](#3-wbs)  
 ┣ [**4. UML**](#4-uml)  
-┣ [**5. 요구사항 명세서**](#5---------)  
-┣ [**6. DB모델링**](#6-db---)  
-┣ [**7. 테스트 케이스**](#7--------)  
-└ [**8. 회고**](#8---)  
+┣ [**5. 요구사항 명세서**](#5-요구사항-명세서)  
+┣ [**6. DB모델링**](#6-db모델링)  
+┣ [**7. 테스트 케이스**](#7-테스트-케이스)  
+└ [**8. 회고**](#8-회고)  
 
 --- 
 
@@ -22,14 +22,12 @@
 
 <br/>
 
-
 # 1. 프로젝트 개요
 
 > <img width="1875" height="959" alt="image" src="https://github.com/user-attachments/assets/ea5e22fb-b6c5-4dfc-ac20-443f8107ac37" />
 > <img width="1760" height="1089" alt="image" src="https://github.com/user-attachments/assets/8912224d-90c8-419d-84e5-f0432cfc9b26" />
 > 사용자들이 다양한 가전 제품을 편리하게 빌리고 반납할 수 있는 모바일/웹 기반 플랫폼을 구축하여 합리적인 가격과 간편한 절차를 통해 렌탈 시장을 활성화하고,
 > 서비스의 신뢰 기반의 기능을 통해 안전한 렌탈 거래 환경을 구축한다.
->
 
 <br/>
 
@@ -59,10 +57,8 @@
 
 <img width="2122" height="883" alt="image" src="https://github.com/user-attachments/assets/2fb50e7e-85c5-4f29-b164-8bbc6c5be4fa" />
 
-
 </div>
 </details>
-
 
 # 4. UML
 
@@ -92,7 +88,6 @@
   
 <img width="1689" height="508" alt="image" src="https://github.com/user-attachments/assets/15a380b4-1cbc-4468-9c37-c832a2293fe3" />
 
-
 </div>
 </details>
 
@@ -101,7 +96,6 @@
 <div markdown="1">
   
 <img width="1685" height="542" alt="image" src="https://github.com/user-attachments/assets/838726ad-4c62-4c6c-93d5-19c5407c33fc" />
-
 
 </div>
 </details>
@@ -112,11 +106,8 @@
   
 <img width="1657" height="447" alt="image" src="https://github.com/user-attachments/assets/a970c574-9d3a-43b3-bd2f-968040a8c7a6" />
 
-
 </div>
 </details>
-
-
 
 # 6. DB모델링
 <details>
