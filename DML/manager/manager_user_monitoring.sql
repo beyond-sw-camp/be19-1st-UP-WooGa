@@ -50,9 +50,34 @@ ORDER BY login_failure_at DESC;
 
 -- 4. 개인정보 변경 이력 조회
 -- 전체 사용자 변경 이력
-SELECT * FROM UserInfoUpdate ORDER BY user_update_at DESC;
+select
+    user_update_id as '업데이트 번호'
+     , user_id as '회원 아이디'
+     , user_update_at as '마지막 업데이트 시간'
+     , user_update_previous_pwd as '변경 전 비밀번호'
+     , user_update_after_pwd as '변경 후 비밀번호'
+     , user_update_previous_address as '변경 전 주소'
+     , user_update_after_address as '변경 후 주소'
+     , user_update_previous_phone_number as '변경 전 전화번호'
+     , user_update_after_phone_number as '변경 전 전화번호'
+     , user_update_previous_email as '변경 전 이메일'
+     , user_update_after_email as '변경 전 이메일'
+from UserInfoUpdate
+ORDER BY user_update_at DESC;
 
 -- 특정 사용자 변경 이력
-SELECT * FROM UserInfoUpdate
-WHERE user_id = 'user01'
+select
+    user_update_id as '업데이트 번호'
+     , user_id as '회원 아이디'
+     , user_update_at as '마지막 업데이트 시간'
+     , user_update_previous_pwd as '변경 전 비밀번호'
+     , user_update_after_pwd as '변경 후 비밀번호'
+     , user_update_previous_address as '변경 전 주소'
+     , user_update_after_address as '변경 후 주소'
+     , user_update_previous_phone_number as '변경 전 전화번호'
+     , user_update_after_phone_number as '변경 전 전화번호'
+     , user_update_previous_email as '변경 전 이메일'
+     , user_update_after_email as '변경 전 이메일'
+from UserInfoUpdate
+where user_id = 'user01'
 ORDER BY user_update_at DESC;

@@ -218,6 +218,7 @@ CREATE TABLE if NOT EXISTS LikePostList (
 
 CREATE TABLE if NOT EXISTS UserInfoUpdate (
     user_update_id	INTEGER	NOT NULL	auto_increment,
+    user_id	VARCHAR(255) NOT NULL UNIQUE,
     user_update_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
     user_update_previous_pwd	VARCHAR(255) NULL,
     user_update_after_pwd	VARCHAR(255) NULL,
@@ -227,7 +228,6 @@ CREATE TABLE if NOT EXISTS UserInfoUpdate (
     user_update_after_phone_number VARCHAR(255) NULL,
     user_update_previous_email VARCHAR(255) NULL,
     user_update_after_email VARCHAR(255) NULL,
-    user_id	VARCHAR(255) NOT NULL UNIQUE,
     PRIMARY KEY(user_update_id),
     FOREIGN KEY(user_id) REFERENCES User(user_id)
 )ENGINE=INNODB;
