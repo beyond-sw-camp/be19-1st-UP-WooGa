@@ -9,6 +9,11 @@
        );
 
 -- 제대로 수정되었는지 확인.
- select *
-   from inquiry
+select
+    inquiry_id as '문의글 번호'
+     , title as '문의 제목'
+     , content as '문의 내용'
+     , created_at as '문의 일자'
+     , user_id as '사용자 아이디'
+from inquiry
   where inquiry_id = 1;
