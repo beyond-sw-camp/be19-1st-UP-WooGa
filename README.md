@@ -1,7 +1,7 @@
 <img width="1338" height="868" alt="image" src="https://github.com/user-attachments/assets/21121f48-cef5-461f-a9cf-56305f1379cd" />
 
 
-┣ [ **1. 프로젝트 개요**](#1--------)  
+┣ [**1. 프로젝트 개요**](#1--------)  
 ┣ [**2. 주요 기능**](#2------)  
 ┣ [**3. WBS**](#3-wbs)  
 ┣ [**4. UML**](#4-uml)  
@@ -29,6 +29,17 @@
 > <img width="1760" height="1089" alt="image" src="https://github.com/user-attachments/assets/8912224d-90c8-419d-84e5-f0432cfc9b26" />
 > 사용자들이 다양한 가전 제품을 편리하게 빌리고 반납할 수 있는 모바일/웹 기반 플랫폼을 구축하여 합리적인 가격과 간편한 절차를 통해 렌탈 시장을 활성화하고,
 > 서비스의 신뢰 기반의 기능을 통해 안전한 렌탈 거래 환경을 구축한다.
+>
+
+<br/>
+
+> - 기술 스택
+> <img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
+> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+> <img src="https://img.shields.io/badge/google_Docs-4285F4?style=for-the-badge&logo=googleDocs&logoColor=white">
+> <img src="https://img.shields.io/badge/intellij_idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
 
 # 2. 주요 기능
 
