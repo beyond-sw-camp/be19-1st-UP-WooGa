@@ -32,7 +32,7 @@ INSERT INTO Category (category_name, parent_category_id) VALUES
                                                              ('생활가전', NULL),        -- id = 2
                                                              ('계절가전', NULL),        -- id = 3
                                                              ('미용/헬스가전', NULL),    -- id = 4
-                                                             ('전기기기', NULL),        -- id = 5
+                                                             ('전자기기', NULL),        -- id = 5
                                                              ('기타', NULL);           -- id = 6
 
 -- 2. 소분류 (parent_category_id = 대분류 ID)
