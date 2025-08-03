@@ -12,11 +12,9 @@ VALUES
     ('user09', '1234', '광주시 북구', '010-9234-5678', 'user09@example.com'),
     ('user10', '1234', '울산시 남구', '010-0334-5678', 'user10@example.com');
 
--- User 테이블 샘플 데이터 (휴면, 탈퇴 계정)
 INSERT INTO User (user_id, pwd, address, phone_number, email, user_state)
 VALUES
-    ('user11', '1234', '서울시 강남구', '010-0000-0000', 'user11@example.com', 'SLEEP'),
-    ('user12', '1234', '서울시 강남구', '010-1111-1111', 'user12@example.com', 'RESIGN');
+    ('user11', '1234', '용인시 기흥구', '010-0987-8765', 'user11@example.com', 'RESIGN');
 
 -- Manager 테이블 샘플 데이터
 INSERT INTO Manager (admin_id, admin_pwd, admin_phone_number, admin_email)
