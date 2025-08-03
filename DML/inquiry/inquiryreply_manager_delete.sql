@@ -8,4 +8,12 @@ DELETE
    );
 
 -- 제대로 삭제 되었는지 확인
-select * from inquiryreply;
+select
+    reply_id as '문의 답변 번호'
+     , content as '답변 내용'
+     , reply_date as '답변 일시'
+     , inquiry_id as '문의 게시물 번호'
+     , answerer_sort as '답변자 구분'
+     , admin_id as '관리자 아이디'
+from inquiryreply
+where answerer_sort = 'MANAGER';
