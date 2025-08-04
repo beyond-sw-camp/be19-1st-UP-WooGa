@@ -1,65 +1,82 @@
-<img width="1338" height="868" alt="image" src="https://github.com/user-attachments/assets/21121f48-cef5-461f-a9cf-56305f1379cd" />
+# 우리의 가전, WooGa
 
-# 목차
+> <span style="font-size: 1.8em; font-weight: bold; color: #f6c743;">돈은 아끼고, 필요한 가전만 똑똑하게 쓰자!</span>
 
-[**1. 프로젝트 개요**](#1-프로젝트-개요)  
+<img width="1432" height="253" alt="wooga logo" src="https://github.com/user-attachments/assets/ffb531ca-93c8-4311-86fc-2d0f72a27a4e" />
+<br><br>
 
-[**2. 주요 기능**](#2-주요-기능) 
 
-[**3. WBS**](#3-wbs)  
+1인 가구를 위한 사용자 간(P2P) 소형 가전 대여 플랫폼 **WooGa**<br>
+필요할 땐 빌리고, 안 쓸 땐 빌려주며 수익까지 얻어보세요!
 
-[**4. UML**](#4-uml)  
+<br>
 
-[**5. 요구사항 명세서**](#5-요구사항-명세서)  
-
-[**6. DB모델링**](#6-db모델링)  
-
-[**7. DDL**](#7-ddl)
-
-[**8. DML**](#8-dml)
-
-[**9. 테스트 케이스**](#9-테스트-케이스) 
-
-[**10. 회고**](#10-회고)  
-
---- 
-
-- 팀원 소개
-
-<br/>
-
-|<img width="291" height="225" alt="image" src="https://github.com/user-attachments/assets/6929d467-e5a2-4e11-a38f-6a6e24874440" />|<img width="379" height="257" alt="image" src="https://github.com/user-attachments/assets/1e30ef06-6968-4f22-8a86-0db9015d653c" />|<img width="327" height="239" alt="image" src="https://github.com/user-attachments/assets/3b48c980-887a-4c90-9d59-81cb443abdc9" />|<img width="299" height="269" alt="image" src="https://github.com/user-attachments/assets/4b599509-e9ec-4ea5-8cbe-dd17969c1c64" />|<img width="334" height="277" alt="image" src="https://github.com/user-attachments/assets/b0f9fe81-2206-4ba4-8f74-3cef32fd7208" />|
+## 프로젝트 멤버
+|<img width="95" alt="image" src="https://github.com/user-attachments/assets/620d8ec7-5b50-43dd-b8eb-fb9d400aca6d" />|<img width="85" alt="image" src="https://github.com/user-attachments/assets/9794d84c-4208-4876-80df-6db6b5148fe1" />|<img width="100" alt="image" src="https://github.com/user-attachments/assets/3ff1ebb1-1593-424a-a805-51024e83ed4a" />|<img width="100" alt="image" src="https://github.com/user-attachments/assets/3d6f278d-6640-4e59-a410-c8bc4655f00b" />|<img width="85" alt="image" src="https://github.com/user-attachments/assets/51b2819a-2aa0-403b-9b5e-0ee657a23680" />|
 |:---:|:---:|:---:|:---:|:---:|
 |**강지현**|**김민지**|**김승민**|**박상윤**|**이재근**|
 
-<br/>
+
+<br>
 
 # 1. 프로젝트 개요
 
-> <img width="1875" height="959" alt="image" src="https://github.com/user-attachments/assets/ea5e22fb-b6c5-4dfc-ac20-443f8107ac37" />
-> <img width="1760" height="1089" alt="image" src="https://github.com/user-attachments/assets/8912224d-90c8-419d-84e5-f0432cfc9b26" />
-> 사용자들이 다양한 가전 제품을 편리하게 빌리고 반납할 수 있는 모바일/웹 기반 플랫폼을 구축하여 합리적인 가격과 간편한 절차를 통해 렌탈 시장을 활성화하고,
-> 서비스의 신뢰 기반의 기능을 통해 안전한 렌탈 거래 환경을 구축한다.
+## 프로젝트 소개
 
-<br/>
+**WooGa**는 1인 가구를 위한 **소형 가전 P2P 대여 플랫폼**입니다!
 
-> - 기술 스택
-> <img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
-> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
-> <img src="https://img.shields.io/badge/google_Docs-4285F4?style=for-the-badge&logo=googleDocs&logoColor=white">
-> <img src="https://img.shields.io/badge/intellij_idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
+- 사용자는 필요한 가전을 빌릴 수도, 자신이 보유한 가전을 빌려줄 수도 있어요.
+- 정기적으로 사용하지 않는 가전을 대여함으로써 수익을 창출할 수 있고,
+- 필요한 순간에만 빌려써서 공간과 비용을 절약할 수 있습니다.
+
+
+## 프로젝트 기획 배경
+
+**1인 가구의 꾸준한 증가**
+
+- 집에서 사용하는 가전은 필수지만, 1인 가구의 경우 사용 빈도가 낮은 경우가 많아 효율성이 떨어집니다.
+- 필요한 시점에만 빌려 쓸 수 있다면, 보다 합리적인 소비가 가능해집니다.
+
+> <img width="1300" height="959" alt="image" src="https://github.com/user-attachments/assets/ea5e22fb-b6c5-4dfc-ac20-443f8107ac37" />
+
+**생활 가전 렌탈 시장의 성장**
+
+- 렌탈 시장은 지속적으로 성장 중이며, 특히 생활 밀착형 소형가전의 수요가 증가하고 있습니다.
+- 이에 따라, 개인 간(P2P) 가전 공유 플랫폼의 필요성이 대두되고 있어요.
+
+> <img width="1300" height="1089" alt="image" src="https://github.com/user-attachments/assets/8912224d-90c8-419d-84e5-f0432cfc9b26" />
+
+
+## Tech Stack
+
+**🗄️ Database** <br>
+<img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
+
+**🐧 Operating System & Virtualization**<br>
+<img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> <img src="https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/virtualbox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white">
+
+**🛠️ Version Control & Collaboration**<br>
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/google_Docs-4285F4?style=for-the-badge&logo=googleDocs&logoColor=white">
+
+**💻 IDE**<br>
+<img src="https://img.shields.io/badge/intellij_idea-000000?style=for-the-badge&logo=intellijidea&logoColor=white">
+
+<br>
 
 # 2. 주요 기능
 
-> - **회원 기능**: 사용자는 자신의 계정을 생성하여 서비스를 이용할 수 있다.  
-> - **게시물 기능**: 대여할 물품을 게시물로 게시하면 일정별 금액에 따라 보증금이 계산되어 등록된다.  
-> - **카테고리 기능**: 카테고리별로 대분류, 중분류, 소분류로 나뉘어 원하는 카테고리를 검색 할 수 있다.  
-> - **쪽지 기능**: 사용자간에 대여관련 대화를 할 수 있다.  
-> - **관심 게시물 기능**: 사용자가 관심가지고 있는 게시물을 모아서 볼 수 있다.  
-> - **문의 기능**: 시스템에 대해 문의할 사항이 생길경우 관리자와 1대1 답변형식으로 대화 할 수 있다.  
-> - **신고 기능**: 게시물 또는 사용자를 신고하여 일정 누적 신고횟수가 초과하면 게시물 삭제 또는 블랙리스트에 등록이 된다.  
+| 기능 구분           | 설명                          |
+| --------------- | --------------------------- |
+| 📝 게시물 등록       | 사용자가 소형 가전을 대여 가능한 상태로 등록   |
+| 🔍 전체 게시물 탐색    | 다른 사용자의 대여 가전을 카테고리별로 탐색    |
+| 🙋 대여 신청        | 원하는 가전에 대해 기간/금액 확인 후 대여 요청 |
+| 💬 쪽지 기능        | 사용자 간 소통으로 대여 일정 및 장소 조율     |
+| ✅ 대여 승인/거절      | 대여자가 신청 내역을 보고 수락 여부 결정     |
+| 💰 보증금 및 대여료 관리 | 대여 시작 전/후 결제 및 정산 처리        |
+| 🛡️ 신고 및 블랙리스트  | 부적절한 사용자나 제품을 신고 가능         |
+| 📍 문의  | 관리자에게 서비스 관련 문의         |
+
+<br>
 
 # 3. WBS
 
@@ -67,10 +84,12 @@
 <summary>WBS</summary>
 <div markdown="1">
 
-<img width="2122" height="883" alt="image" src="https://github.com/user-attachments/assets/2fb50e7e-85c5-4f29-b164-8bbc6c5be4fa" />
+<img width="1053" height="447" alt="image" src="https://github.com/user-attachments/assets/2695dee4-4b34-47fa-8416-6cd6407d5db8" />
 
 </div>
 </details>
+
+<br>
 
 # 4. UML
 
@@ -82,6 +101,8 @@
 
 </div>
 </details>
+
+<br>
 
 # 5. 요구사항 명세서
 
@@ -121,6 +142,8 @@
 </div>
 </details>
 
+<br>
+
 # 6. DB모델링
 <details>
 <summary>논리 모델링</summary>
@@ -140,251 +163,9 @@
 </div>
 </details>
 
-# 7. DDL
-<details>
-<summary>테이블 생성</summary>
-<pre><code>
+<br>
 
--- 1. 자식 테이블 (종속된 외래키 다수)
-DROP TABLE IF EXISTS UserInfoUpdate;
-DROP TABLE IF EXISTS LikePostList;
-DROP TABLE IF EXISTS RentalRequest;
-DROP TABLE IF EXISTS LoginSuccess;
-DROP TABLE IF EXISTS PostPhoto;
-DROP TABLE IF EXISTS BlackList;
-DROP TABLE IF EXISTS ReportPhoto;
-DROP TABLE IF EXISTS LoginFailure;
-DROP TABLE IF EXISTS Message;
-DROP TABLE IF EXISTS Report;
-DROP TABLE IF EXISTS InquiryReply;
-
--- 2. 중간 테이블
-DROP TABLE IF EXISTS Post;
-DROP TABLE IF EXISTS Inquiry;
-
--- 3. 부모 테이블
-DROP TABLE IF EXISTS Category;
-DROP TABLE IF EXISTS Manager;
-DROP TABLE IF EXISTS `user`;
-
-CREATE TABLE if NOT EXISTS User (
-    user_id	VARCHAR(255)	NOT NULL,
-    pwd	VARCHAR(255)	NOT NULL,
-    address	VARCHAR(255)	NOT NULL,
-    phone_number	VARCHAR(255)	NOT NULL,
-    email	VARCHAR(255)	NOT NULL,
-    signup_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    last_login_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    last_pwd_change_date	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_state	VARCHAR(255) NOT NULL DEFAULT 'ACTIVE',
-    sleep_date	DATETIME	NULL,
-    resign_date	DATETIME	NULL,
-    report_count	INTEGER	NOT NULL DEFAULT 0,
-    PRIMARY KEY(user_id),
-    CHECK(user_state IN ('ACTIVE', 'SLEEP', 'RESIGN'))
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Manager (
-    admin_id	VARCHAR(255)	NOT NULL,
-    admin_pwd	VARCHAR(255)	NOT NULL,
-    admin_phone_number	VARCHAR(255)	NOT NULL,
-    admin_email	VARCHAR(255)	NOT NULL,
-    PRIMARY KEY(admin_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Category (
-    category_id	INTEGER	NOT NULL	auto_increment,
-    category_name	VARCHAR(255) NOT NULL UNIQUE,
-    parent_category_id INTEGER NULL,
-    PRIMARY KEY(category_id),
-    FOREIGN KEY(parent_category_id) REFERENCES category(category_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Inquiry (
-    inquiry_id	INTEGER NOT NULL	auto_increment,
-    title VARCHAR(255) NOT NULL,
-    content	VARCHAR(255) NOT NULL,
-    created_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_id	VARCHAR(255) NOT NULL,
-    PRIMARY KEY(inquiry_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Post (
-    post_id	INTEGER	NOT NULL	auto_increment,
-    user_id	VARCHAR(255)	NOT NULL,
-    category_id	INTEGER	NOT NULL,
-    title	VARCHAR(255)	NOT NULL,
-    description	VARCHAR(255)	NOT NULL,
-    product_name	VARCHAR(255)	NOT NULL,
-    rental_start_date	DATETIME	NOT NULL,
-    rental_end_date	DATETIME	NOT NULL,
-    rental_daily_price	INTEGER	NOT NULL DEFAULT 0,
-    deposit	INTEGER	NOT NULL DEFAULT 0,
-    created_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at	DATETIME	NULL,
-    next_available_date	DATETIME	NULL,
-    report_count INTEGER	NOT NULL DEFAULT 0,
-    min_rental_period INTEGER NOT NULL DEFAULT 1,
-    PRIMARY KEY(post_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id),
-    FOREIGN KEY(category_id) REFERENCES Category(category_id)
-)ENGINE=INNODB;
-
-CREATE INDEX idx_post_user_id ON Post(user_id);
-
-CREATE TABLE if NOT EXISTS InquiryReply (
-    reply_id	INTEGER	NOT NULL	auto_increment,
-    content	VARCHAR(255) NOT NULL,
-    reply_date	DATETIME	NOT NULL,
-    inquiry_id	INTEGER	NOT NULL,
-    answerer_sort VARCHAR(255) NOT NULL,
-    user_id VARCHAR(255) NULL,
-    admin_id	VARCHAR(255) NULL,
-    PRIMARY KEY(reply_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id),
-    FOREIGN KEY(inquiry_id) REFERENCES Inquiry(inquiry_id),
-    FOREIGN KEY(admin_id) REFERENCES Manager(admin_id),
-    CHECK (
-        (answerer_sort = 'USER' AND user_id IS NOT NULL AND admin_id IS NULL) OR
-        (answerer_sort = 'MANAGER' AND admin_id IS NOT NULL AND user_id IS NULL)
-    )
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Report (
-    report_id INTEGER	NOT NULL	AUTO_INCREMENT,
-    report_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    report_content	VARCHAR(255) NULL,
-    report_state	VARCHAR(255) NOT NULL DEFAULT 'REPORTED',
-    report_manager	VARCHAR(255) NULL,
-    reporter_id	VARCHAR(255)	NOT NULL,
-    report_sort	VARCHAR(255)	NOT NULL,
-    reported_user_id	VARCHAR(255)	NULL,
-    reported_post_id	INTEGER	NULL,
-    PRIMARY KEY(report_id),
-    FOREIGN KEY(report_manager) REFERENCES Manager(admin_id),
-    FOREIGN KEY(reporter_id) REFERENCES User(user_id),
-    FOREIGN KEY(reported_user_id) REFERENCES User(user_id),
-    FOREIGN KEY(reported_post_id) REFERENCES Post(post_id),
-    CHECK(report_state IN ('REPORTED','PROGRESSING','RESOLVE','REJECT')),
-    CHECK(report_sort IN ('USER','POST')),
-    CHECK(
-        (report_sort = 'USER' AND reported_user_id IS NOT NULL AND reported_post_id IS NULL) OR
-        (report_sort = 'POST' AND reported_post_id IS NOT NULL AND reported_user_id IS NULL)
-    )
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS Message (
-    message_id	INTEGER	NOT NULL	auto_increment,
-    sender_id	VARCHAR(255)	NOT NULL,
-    receiver_id	VARCHAR(255)	NOT NULL,
-    title VARCHAR(255)     NOT NULL,
-    content	VARCHAR(255)	NOT NULL,
-    sent_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    message_expiry_date DATETIME NULL,
-    check_time DATETIME NULL,
-    PRIMARY KEY(message_id),
-    FOREIGN KEY(sender_id) REFERENCES User(user_id),
-    FOREIGN KEY(receiver_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS LoginFailure (
-    login_failure_id	INTEGER	NOT NULL	auto_increment,
-    login_failure_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    login_failure_ip	VARCHAR(255)	NOT NULL,
-    login_failure_reason	VARCHAR(255)	NOT NULL,
-    user_id	VARCHAR(255)	NOT NULL,
-    PRIMARY KEY(login_failure_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS ReportPhoto (
-    report_image_id	INTEGER	NOT NULL	auto_increment,
-    image_url	VARCHAR(255)	NOT NULL,
-    report_id	INTEGER	NOT NULL,
-    PRIMARY KEY(report_image_id),
-    FOREIGN KEY(report_id) REFERENCES Report(report_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS BlackList (
-    blacklist_id	INTEGER	NOT NULL	auto_increment,
-    user_id	VARCHAR(255)	NOT NULL,
-    blacklist_reason	VARCHAR(255) NOT NULL,
-    blacklist_start_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    blacklist_period	INTEGER NOT NULL DEFAULT 3,
-    blacklist_end_at    DATETIME NOT NULL,
-    PRIMARY KEY(blacklist_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS PostPhoto (
-    photo_post_id	INTEGER	NOT NULL	auto_increment,
-    photo_post_url	VARCHAR(255) NOT	NULL,
-    post_id	INTEGER	NOT NULL,
-    PRIMARY KEY(photo_post_id),
-    FOREIGN KEY(post_id) REFERENCES Post(post_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS LoginSuccess (
-    login_success_id	INTEGER	NOT NULL	auto_increment,
-    login_success_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    login_success_ip	VARCHAR(255) NOT NULL,
-    user_id	VARCHAR(255) NOT NULL,
-    PRIMARY KEY(login_success_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS RentalRequest (
-    rental_request_id	INTEGER	NOT NULL	auto_increment,
-    post_id	INTEGER	NOT NULL,
-    renter	VARCHAR(255) NOT NULL,
-    request_start_date DATETIME NOT NULL,
-    request_end_date	DATETIME	NOT NULL,
-    created_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    state	VARCHAR(255)	NOT NULL DEFAULT 'WAITING',
-    final_price	INTEGER	NOT NULL DEFAULT 0,
-    PRIMARY KEY(rental_request_id),
-    FOREIGN KEY(post_id) REFERENCES Post(post_id),
-    FOREIGN KEY(renter) REFERENCES User(user_id),
-    CHECK(state IN ('WAITING','ACCEPT','DECLINE'))
-)ENGINE=INNODB;
-
-CREATE INDEX idx_rental_post_id ON rentalrequest(post_id);
-CREATE INDEX idx_rental_renter ON rentalrequest(renter);
-
-CREATE TABLE if NOT EXISTS LikePostList (
-    like_post_id	INTEGER	NOT NULL	auto_increment,
-    post_id	INTEGER	NOT NULL,
-    user_id	VARCHAR(255)	NOT NULL,
-    like_post_create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY(like_post_id),
-    UNIQUE KEY unique_post_user (post_id, user_id),
-    FOREIGN KEY(post_id) REFERENCES Post(post_id),
-    FOREIGN KEY(user_id) REFERENCES user(user_id)
-)ENGINE=INNODB;
-
-CREATE TABLE if NOT EXISTS UserInfoUpdate (
-    user_update_id	INTEGER	NOT NULL	auto_increment,
-    user_id	VARCHAR(255) NOT NULL UNIQUE,
-    user_update_at	DATETIME	NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_update_previous_pwd	VARCHAR(255) NULL,
-    user_update_after_pwd	VARCHAR(255) NULL,
-    user_update_previous_address	VARCHAR(255) NULL,
-    user_update_after_address	VARCHAR(255) NULL,
-    user_update_previous_phone_number VARCHAR(255) NULL,
-    user_update_after_phone_number VARCHAR(255) NULL,
-    user_update_previous_email VARCHAR(255) NULL,
-    user_update_after_email VARCHAR(255) NULL,
-    PRIMARY KEY(user_update_id),
-    FOREIGN KEY(user_id) REFERENCES User(user_id)
-)ENGINE=INNODB;
-
-</code></pre>
-</details>
-
-# 8. DML
-
-# 9. 테스트 케이스
+# 7. 테스트 케이스
 
 <details>
 <summary>테스트 케이스</summary>
@@ -395,7 +176,9 @@ CREATE TABLE if NOT EXISTS UserInfoUpdate (
 </div>
 </details>
 
-# 10. 회고
+<br>
+
+# 8. 회고
 
 ### 강지현
 
