@@ -423,6 +423,9 @@
 </details>
 
 
+</details>
+
+
 
 
 <br>
@@ -524,14 +527,6 @@
 <summary>REQ-R-6_게시물 대여 요청 삭제</summary>
 <img src="![Adobe Express - 대여 요청 삭제](https://github.com/user-attachments/assets/7e52ba5f-233e-44d8-8671-a04ae0fd8435)">
 </details>
-
-
-</details>
-
-
-
-
-
 
 
 </details>
