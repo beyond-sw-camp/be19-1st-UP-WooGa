@@ -168,13 +168,204 @@
 # 7. 테스트 케이스
 
 <details>
-<summary>테스트 케이스</summary>
-<div markdown="1">
-  
-<img width="1152" height="1130" alt="image" src="https://github.com/user-attachments/assets/7d2d245f-0787-45bf-a1f1-cf331e739936" />
+<summary>REG-M-회원관리</summary>
 
-</div>
+<details>
+<summary>REQ-M-1_회원가입</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-1_회원가입.gif?raw=true">
 </details>
+<details>
+<summary>REQ-M-2_로그인_성공_실패이력</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-2_로그인_성공_실패이력.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-3_회원정보수정</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-3_회원정보수정.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-4_회원탈퇴</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-4_회원탈퇴.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-5_관리자계정등록</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-5_관리자계정등록.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-6_관리자로그인</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-6_관리자로그인.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-7_회원정보조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-7_회원정보조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-M-8_휴면계정처리</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REG-M-회원관리/REQ-M-8_휴면계정처리.gif?raw=true">
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>REQ-C-카테고리 관리</summary>
+
+<details>
+<summary>REQ-C-1_카테고리조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-C-카테고리 관리/REQ-C-1_카테고리조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-C-2_카테고리수정</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-C-카테고리 관리/REQ-C-2_카테고리수정.gif?raw=true">
+</details>
+<details>
+<summary>REQ-C-3_카테고리추가</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-C-카테고리 관리/REQ-C-3_카테고리추가.gif?raw=true">
+</details>
+<details>
+<summary>REQ-C-4_카테고리삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-C-카테고리 관리/REQ-C-4_카테고리삭제.gif?raw=true">
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>REQ-D-신고 관리</summary>
+
+<details>
+<summary>REQ-D-1_게시물신고</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-1_게시물신고.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-2_사용자신고</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-2_사용자신고.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-3_신고내역조회(사용자)</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-3_신고내역조회(사용자).gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-4_게시물신고누적증가</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-4_게시물신고누적증가.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-5_신고내역조회(관리자)</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-5_신고내역조회(관리자).gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-6_신고처리상태변경</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-6_신고처리상태변경.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-7_블랙리스트등록</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-7_블랙리스트등록.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-8_블랙리스트조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-8_블랙리스트조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-D-9_블랙리스트삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-D-신고 관리/REQ-D-9_블랙리스트삭제.gif?raw=true">
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>REQ-I-관심게시물 관리</summary>
+
+<details>
+<summary>REQ-I-1_관심게시물저장</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-I-관심게시물 관리/REQ-I-1_관심게시물저장.gif?raw=true">
+</details>
+<details>
+<summary>REQ-I-2_관심게시물조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-I-관심게시물 관리/REQ-I-2_관심게시물조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-I-3_관심게시물삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-I-관심게시물 관리/REQ-I-3_관심게시물삭제.gif?raw=true">
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>REQ-N-쪽지관리</summary>
+
+<details>
+<summary>REQ-N-1_쪽지발신</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-N-쪽지관리/REQ-N-1_쪽지발신.gif?raw=true">
+</details>
+<details>
+<summary>REQ-N-2_쪽지내용확인</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-N-쪽지관리/REQ-N-2_쪽지내용확인.gif?raw=true">
+</details>
+<details>
+<summary>REQ-N-3_쪽지함조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-N-쪽지관리/REQ-N-3_쪽지함조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-N-4_쪽지삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-N-쪽지관리/REQ-N-4_쪽지삭제.gif?raw=true">
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>REQ-Q-문의관리</summary>
+
+<details>
+<summary>REQ-Q-1_문의글작성</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-1_문의글작성.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-2_문의글삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-2_문의글삭제.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-3_문의글수정</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-3_문의글수정.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-4_문의글조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-4_문의글조회.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-5,8_문의답변작성</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-5,8_문의답변작성.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-6_관리자문의답변삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-6_관리자문의답변삭제.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-7_관리자문의답변수정</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-7_관리자문의답변수정.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-9_사용자문의답변삭제</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-9_사용자문의답변삭제.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-10_사용자문의답변수정</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-10_사용자문의답변수정.gif?raw=true">
+</details>
+<details>
+<summary>REQ-Q-11_문의답변조회</summary>
+<img src="https://github.com/beyond-sw-camp/be19-1st-UP-WooGa/blob/main/images/req_gifs/REQ-Q-문의관리/REQ-Q-11_문의답변조회.gif?raw=true">
+</details>
+
+</details>
+
+
 
 <br>
 
