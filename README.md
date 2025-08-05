@@ -11,11 +11,46 @@
 
 <br>
 
+<br>
+
 ## 프로젝트 멤버
 |<img width="95" alt="image" src="https://github.com/user-attachments/assets/620d8ec7-5b50-43dd-b8eb-fb9d400aca6d" />|<img width="85" alt="image" src="https://github.com/user-attachments/assets/9794d84c-4208-4876-80df-6db6b5148fe1" />|<img width="100" alt="image" src="https://github.com/user-attachments/assets/3ff1ebb1-1593-424a-a805-51024e83ed4a" />|<img width="100" alt="image" src="https://github.com/user-attachments/assets/3d6f278d-6640-4e59-a410-c8bc4655f00b" />|<img width="85" alt="image" src="https://github.com/user-attachments/assets/51b2819a-2aa0-403b-9b5e-0ee657a23680" />|
 |:---:|:---:|:---:|:---:|:---:|
 |**강지현**|**김민지**|**김승민**|**박상윤**|**이재근**|
 
+
+<br>
+
+## 목차
+
+<br/>
+
+# Git 폴더 구조
+<pre>
+\BE19-1ST-UP-WOOG
+📁 DATA
+📁 DDL
+📁 DML
+├─ 📂 admin
+├─ 📂 blackList
+├─ 📂 category
+├─ 📂 inquiry
+├─ 📂 likePostList
+├─ 📂 message
+├─ 📂 post
+│ ├─ 📂 post_management
+│ └─ 📂 post_slelect
+├─ 📂 rental
+│ ├─ 📂 rental_request
+│ └─ 📂 rental_request_choice
+├─ 📂 report
+└─ 📂 user
+📁 images
+📁 SETUP
+├─ ⚙️ PROCEDURE
+├─ 🕒 SCHEDULER
+└─ 🧲 TRIGGER
+</pre>
 
 <br>
 
