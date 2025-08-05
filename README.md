@@ -173,7 +173,7 @@
 <summary>게시물/대여신청/카테고리</summary>
 <div markdown="1">
   
-<img width="1689" height="508" alt="https://github.com/user-attachments/assets/0bc19d32-7ffb-4e4a-843c-57a2a2dc82f9" />
+<img width="1689" height="508" alt="image" src="https://github.com/user-attachments/assets/0bc19d32-7ffb-4e4a-843c-57a2a2dc82f9" />
 
 
 </div>
