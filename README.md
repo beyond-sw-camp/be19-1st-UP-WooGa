@@ -436,14 +436,14 @@
 
 <details>
 <summary>REQ-P-1_게시물 등록</summary>
-<img src="![Adobe Express - 게시물 등록](https://github.com/user-attachments/assets/ac594ce9-299b-4334-9f19-76a377658487)">
+<img src="https://github.com/user-attachments/assets/ac594ce9-299b-4334-9f19-76a377658487">
 </details>
 
 
 
 <details>
 <summary>REQ-P-2_게시물 삭제</summary>
-<img src="![Adobe Express - 게시물 삭제](https://github.com/user-attachments/assets/1ed23506-8fee-4cb3-9e03-22fcca14cd58)">
+<img src="https://github.com/user-attachments/assets/1ed23506-8fee-4cb3-9e03-22fcca14cd58">
 </details>
 
 
@@ -451,7 +451,7 @@
 
 <details>
 <summary>REQ-P-3_게시물 수정</summary>
-<img src="![Adobe Express - 게시물 수정](https://github.com/user-attachments/assets/c7ed50d5-6d7a-4e28-8bea-441159210a68)">
+<img src="https://github.com/user-attachments/assets/c7ed50d5-6d7a-4e28-8bea-441159210a68">
 </details>
 
 
@@ -459,7 +459,7 @@
 
 <details>
 <summary>REQ-P-4_전체 게시물 조회</summary>
-<img src="![Adobe Express - 모든 게시물 조회](https://github.com/user-attachments/assets/461f43d5-c610-423a-9858-b55a0696d39d)">
+<img src="https://github.com/user-attachments/assets/461f43d5-c610-423a-9858-b55a0696d39d">
 </details>
 
 
@@ -468,7 +468,7 @@
 
 <details>
 <summary>REQ-P-5_대여 게시물 조회</summary>
-<img src="![Adobe Express - 대여 게시물 조회](https://github.com/user-attachments/assets/9e7a895e-6af1-47bf-9b3c-0d05fc25bcac)">
+<img src="https://github.com/user-attachments/assets/9e7a895e-6af1-47bf-9b3c-0d05fc25bcac">
 </details>
 
 
@@ -476,7 +476,7 @@
 
 <details>
 <summary>REQ-P-6_등록 게시물 조회</summary>
-<img src="![Adobe Express - 등록 게시물 조회](https://github.com/user-attachments/assets/63f858cf-2986-4d28-9e52-5a35cd6b5c36)">
+<img src="https://github.com/user-attachments/assets/63f858cf-2986-4d28-9e52-5a35cd6b5c36">
 </details>
 
 
@@ -494,15 +494,15 @@
 
 <details>
 <summary>REQ-R-1_대여한 게시물 조회</summary>
-<img src="![Adobe Express - 대여 게시물 조회](https://github.com/user-attachments/assets/b0b065c0-69a9-48a7-acaa-2361a27a80ad">
+<img src="https://github.com/user-attachments/assets/b0b065c0-69a9-48a7-acaa-2361a27a80ad">
 </details>
-)
+
 
 
 
 <details>
 <summary>REQ-R-2_게시물 대여 요청</summary>
-<img src="![Adobe Express - 대여 요청](https://github.com/user-attachments/assets/b2cbc4b2-39bc-4110-a71e-89b9df7d5c5b)">
+<img src="https://github.com/user-attachments/assets/b2cbc4b2-39bc-4110-a71e-89b9df7d5c5b">
 </details>
 
 
@@ -511,7 +511,7 @@
 
 <details>
 <summary>REQ-R-3_게시물 대여 요청 취소</summary>
-<img src="![Adobe Express - 대여 요청 삭제](https://github.com/user-attachments/assets/5f497d1e-37f1-4cfd-ba57-1ebec4c163eb)">
+<img src="https://github.com/user-attachments/assets/5f497d1e-37f1-4cfd-ba57-1ebec4c163eb">
 </details>
 
 
@@ -528,7 +528,7 @@
 
 <details>
 <summary>REQ-R-5_게시물 대여 요청 수락</summary>
-<img src="![Adobe Express - 대여 요청 수락](https://github.com/user-attachments/assets/57724e2c-3d32-46dc-b396-23a681808948)">
+<img src="https://github.com/user-attachments/assets/57724e2c-3d32-46dc-b396-23a681808948">
 </details>
 
 
@@ -536,7 +536,7 @@
 
 <details>
 <summary>REQ-R-6_게시물 대여 요청 거절</summary>
-<img src="![Adobe Express - 대여 요청 거절](https://github.com/user-attachments/assets/adbc68d9-19c8-44ed-b0f6-1a7288b624a3)">
+<img src="https://github.com/user-attachments/assets/adbc68d9-19c8-44ed-b0f6-1a7288b624a3">
 </details>
 
 
