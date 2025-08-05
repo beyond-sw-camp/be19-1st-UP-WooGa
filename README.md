@@ -519,7 +519,7 @@
 
 <details>
 <summary>REQ-R-4_게시물 대여 요청 조회</summary>
-<img src="![Adobe Express - 대여 요청 조회](https://github.com/user-attachments/assets/ce1739e6-1335-48b9-9050-14b7d5b8087a)">
+<img src="https://github.com/user-attachments/assets/ce1739e6-1335-48b9-9050-14b7d5b8087a">
 </details>
 
 
